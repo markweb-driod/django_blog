@@ -9,8 +9,10 @@
 <h2><a href="{% url 'content' post.pk %}">{{ post.title }}</a></h2>
 <p>{{ post.body }}</p>
 </div>
+
 {% endfor %}
 
+<h4><a href="{% url 'post_new'%}">+ New Post</a></h4>
 
 {% endblock content %}
 
