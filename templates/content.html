@@ -4,5 +4,5 @@
 <h2>{{ object.title }}</h2>
 <p>{{ object.body }}</p>
 </div>
-{}
+<a href="{% url 'update_post' post.pk%}">+ Update POST</a>
 {% endblock content %}
