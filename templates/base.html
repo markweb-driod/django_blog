@@ -4,6 +4,12 @@
 
 </header>
 <br><br><br>
+{% if user.is_authenticated%}
+
+<h1>Hi {{ user.username }}  {% url 'logout' %}</h1>
+{% else %}
+<p>You are not currently logged in, please <a href="{% url 'login'%}">Login to continue</a></p>
+{% endif %}
 {% block content  %}
 
 
